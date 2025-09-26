@@ -16,3 +16,4 @@ This repository now hosts the early build of a travel-planning website called **
 - Integrate form handling to capture consultation requests.
 - Add additional destination pages and photo galleries.
 - Localize the content for key target markets.
+
