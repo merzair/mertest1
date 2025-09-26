@@ -192,6 +192,19 @@ main {
     gap: 1rem;
 }
 
+.timeline--detailed ul {
+    margin-left: 1rem;
+    display: grid;
+    gap: 0.45rem;
+    color: rgba(11, 29, 44, 0.78);
+    font-size: 0.95rem;
+}
+
+.timeline--detailed ul li {
+    list-style: disc;
+}
+
+
 .timeline__day {
     border-radius: var(--radius-medium);
     padding: 1.1rem 1.2rem;
@@ -215,6 +228,84 @@ main {
     font-weight: 600;
     margin-bottom: 0.45rem;
 }
+
+
+.flight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.flight-card {
+    padding: 1.3rem 1.4rem;
+    border-radius: var(--radius-medium);
+    background: linear-gradient(135deg, rgba(44, 150, 208, 0.18), rgba(255, 255, 255, 0.95));
+    border: 1px solid rgba(44, 150, 208, 0.3);
+    box-shadow: 0 12px 24px rgba(11, 29, 44, 0.12);
+}
+
+.flight-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+}
+
+.flight-card__date {
+    font-weight: 600;
+    color: var(--color-night);
+}
+
+.flight-card__time {
+    color: rgba(11, 29, 44, 0.75);
+    margin-top: 0.25rem;
+}
+
+.lodging-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.lodging-card {
+    background: rgba(246, 248, 251, 0.92);
+    border-radius: var(--radius-medium);
+    padding: 1.4rem 1.5rem;
+    border: 1px solid rgba(11, 29, 44, 0.08);
+    box-shadow: 0 10px 20px rgba(11, 29, 44, 0.08);
+}
+
+.lodging-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.lodging-list {
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+    color: rgba(11, 29, 44, 0.78);
+    font-size: 0.95rem;
+}
+
+.pricing-card {
+    display: grid;
+    gap: 0.4rem;
+    padding: 1.6rem 1.8rem;
+    border-radius: var(--radius-large);
+    background: linear-gradient(145deg, rgba(44, 150, 208, 0.2), rgba(255, 255, 255, 0.95));
+    border: 1px solid rgba(44, 150, 208, 0.28);
+    box-shadow: 0 18px 32px rgba(11, 29, 44, 0.14);
+    font-size: 1.05rem;
+}
+
+.pricing-card__total {
+    font-size: 1.2rem;
+    color: var(--color-night);
+}
+
+.pricing-card__note {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(11, 29, 44, 0.7);
+}
+
 
 .insights-grid {
     display: grid;
@@ -303,6 +394,16 @@ main {
     main {
         gap: 3rem;
     }
+
+
+    .flight-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lodging-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
 
     .insights-grid {
         grid-template-columns: 3fr 2fr;

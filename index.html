@@ -4,129 +4,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>北海道冬季旅行规划</title>
-    <meta name="description" content="为北海道定制的移动优先旅行规划：待办事项、每日行程、天气预报与周边热点新闻。">
+
+    <title>北海道 7 晚 8 天 VIP 团旅行规划</title>
+    <meta name="description" content="9 人 VIP 团北海道 7 晚 8 天行程：航班、每日行程、酒店与交通报价，一键掌握。">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="hero">
-
         <div class="hero__content">
-            <p class="hero__eyebrow">2024 冬季 · 北海道深度游</p>
-            <h1>打造你的北海道雪国之旅</h1>
-            <p class="hero__subtitle">覆盖札幌、小樽、二世谷与富良野，让手机随时掌握待办、行程、天气与资讯。</p>
+            <p class="hero__eyebrow">2025 年 12 月 · 9 人 VIP 团</p>
+            <h1>北海道 7 晚 8 天深度旅行规划</h1>
+            <p class="hero__subtitle">吉隆坡直飞札幌 · 全程 Coaster 专车 · 4 间双床/双人房 · 中文导游陪同。</p>
             <nav class="quick-nav" aria-label="页面导航">
                 <a href="#todo">出行待办</a>
-                <a href="#schedule">每日行程</a>
-                <a href="#insights">天气与资讯</a>
+                <a href="#flights">航班安排</a>
+                <a href="#itinerary">每日行程</a>
+                <a href="#lodging">住宿/交通</a>
+                <a href="#pricing">团费报价</a>
             </nav>
 
         </div>
     </header>
 
     <main>
-
         <section id="todo" class="section">
             <div class="section__header">
-                <h2>《To Do List》出发前的准备</h2>
-                <p>按照清单逐项确认，保障旅程顺利无忧。</p>
+                <h2>《To Do List》出发前准备</h2>
+                <p>为 8 位成人 + 1 位儿童团队量身定制，保证旅程顺利无忧。</p>
             </div>
             <form class="todo-list" aria-labelledby="todo">
                 <label class="todo-item">
-                    <input type="checkbox"> 
-                    <span>确认护照有效期与日本签证（电子签/多次签）</span>
+                    <input type="checkbox">
+                    <span>确认 9 人护照有效期、签证状态，并准备儿童随行文件</span>
                 </label>
                 <label class="todo-item">
                     <input type="checkbox">
-                    <span>购买涵盖雪上运动的旅行保险</span>
+                    <span>购买覆盖滑雪与冬季活动的旅行保险</span>
                 </label>
                 <label class="todo-item">
                     <input type="checkbox">
-                    <span>预约 Pocket Wi-Fi 或 eSIM，保障手机导航</span>
+                    <span>与供应商确认 Coaster 专车及中文导游每日 10 小时服务时间</span>
                 </label>
                 <label class="todo-item">
                     <input type="checkbox">
-                    <span>预订 JR Hokkaido Pass 与机场接驳</span>
+                    <span>提前联系各酒店，确认 4 间双床/双人房与儿童不占床安排</span>
                 </label>
                 <label class="todo-item">
                     <input type="checkbox">
-                    <span>准备保暖衣物、暖宝宝、防滑雪地靴</span>
+                    <span>预订滑雪场门票、租借装备与可选自费项目</span>
                 </label>
                 <label class="todo-item">
                     <input type="checkbox">
-                    <span>在手机离线地图中标记景点与餐厅</span>
+                    <span>下载离线地图、天气 App，并共享团队联络方式</span>
+
                 </label>
             </form>
         </section>
 
-        <section id="schedule" class="section section--light">
+
+        <section id="flights" class="section section--light">
             <div class="section__header">
-                <h2>《每日行程》7 天札幌·道央精选</h2>
-                <p>移动端友好的时间轴，随时掌握当日亮点与交通提示。</p>
+                <h2>航班安排</h2>
+                <p>往返均为吉隆坡直飞新千岁机场，时间请提前通知团队成员。</p>
             </div>
-            <ol class="timeline">
+            <div class="flight-grid" role="list">
+                <article class="flight-card" role="listitem">
+                    <h3>吉隆坡 → 札幌（新千岁）</h3>
+                    <p class="flight-card__date">2025 年 12 月 18 日（四）</p>
+                    <p class="flight-card__time">00:20 起飞 · 08:55 抵达 · 直飞航班</p>
+                </article>
+                <article class="flight-card" role="listitem">
+                    <h3>札幌（新千岁） → 吉隆坡</h3>
+                    <p class="flight-card__date">2025 年 12 月 25 日（四）</p>
+                    <p class="flight-card__time">10:10 起飞 · 18:00 抵达 · 直飞航班</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="itinerary" class="section">
+            <div class="section__header">
+                <h2>《每日行程》7 晚 8 天</h2>
+                <p>含景点亮点、住宿信息与交通提示，方便随时查看。</p>
+            </div>
+            <ol class="timeline timeline--detailed">
                 <li class="timeline__day">
-                    <div class="timeline__heading">Day 1 · 札幌抵达</div>
-                    <p>新千岁机场入境 → JR 快速列车前往札幌 → 夜访薄野拉面横丁。</p>
+                    <div class="timeline__heading">第 1 天｜12 月 18 日（四）｜吉隆坡 → 札幌</div>
+                    <ul>
+                        <li>08:55 抵达新千岁机场，专车 Coaster 前往札幌。</li>
+                        <li>下午办理入住 Grand Mercure Sapporo Odori Park（14:00 后）。</li>
+                        <li>地址：北海道札幌市北 1 条西 11 丁目 1 · 电话：011-271-2711。</li>
+                    </ul>
                 </li>
                 <li class="timeline__day">
-                    <div class="timeline__heading">Day 2 · 札幌城市游</div>
-                    <p>北海道神宫参拜、圆山公园散策 → 大通公园白色灯饰节 → JR 塔展望台夜景。</p>
+                    <div class="timeline__heading">第 2 天｜12 月 19 日（五）｜札幌 – 登别 – 洞爷湖</div>
+                    <ul>
+                        <li>参观登别地狱谷、登别熊牧场。</li>
+                        <li>洞爷湖展望台与洞爷雪世界，欣赏冬季湖景。</li>
+                        <li>入住 Hotel Premium Lake Toya（地址：北海道虻田郡洞爷湖温泉 212-3-2 · 电话：0142-75-1011）。</li>
+                    </ul>
                 </li>
                 <li class="timeline__day">
-                    <div class="timeline__heading">Day 3 · 小樽运河</div>
-                    <p>搭乘 JR 至小樽 → 运河仓库群与玻璃工坊 → LeTAO 双层芝士蛋糕下午茶。</p>
+                    <div class="timeline__heading">第 3 天｜12 月 20 日（六）｜洞爷湖 – 小樽</div>
+                    <ul>
+                        <li>游览三角市场、北一硝子、小樽音乐盒堂。</li>
+                        <li>漫步小樽运河，夜赏灯光倒影。</li>
+                        <li>入住 Authent Hotel Otaru（地址：北海道小樽市稲穂 2-15-1 · 电话：0134-27-8100）。</li>
+                    </ul>
                 </li>
                 <li class="timeline__day">
-                    <div class="timeline__heading">Day 4 · 二世谷雪场</div>
-                    <p>自驾或巴士前往二世谷 → 全天粉雪滑雪课程 → 温泉旅馆泡汤缓解疲劳。</p>
+                    <div class="timeline__heading">第 4 天｜12 月 21 日（日）｜小樽 – 旭川 – 美瑛 – 富良野</div>
+                    <ul>
+                        <li>旭山动物园观赏企鹅巡游。</li>
+                        <li>造访青池与白鬚瀑布，感受雪景秘境。</li>
+                        <li>入住 New Furano Prince Hotel（地址：北海道富良野市中五郎 · 电话：0167-22-1111）。</li>
+                    </ul>
                 </li>
                 <li class="timeline__day">
-                    <div class="timeline__heading">Day 5 · 登别地狱谷</div>
-                    <p>登别温泉街漫步 → 地狱谷蒸汽景观 → 傍晚品尝温泉料理。</p>
+                    <div class="timeline__heading">第 5 天｜12 月 22 日（一）｜富良野 – 札幌</div>
+                    <ul>
+                        <li>富良野滑雪场体验雪地活动。</li>
+                        <li>漫步森林精灵露台，品味木屋咖啡。</li>
+                        <li>返回札幌入住 Grand Mercure Sapporo Odori Park 或同级。</li>
+                    </ul>
                 </li>
                 <li class="timeline__day">
-                    <div class="timeline__heading">Day 6 · 富良野薰衣草灯饰</div>
-                    <p>雪地摩托体验 → Ningle Terrace 手作市集 → 晚间返回札幌。</p>
+                    <div class="timeline__heading">第 6 天｜12 月 23 日（二）｜札幌市区游</div>
+                    <ul>
+                        <li>参观北海道神宫，感受庄严氛围。</li>
+                        <li>前往三井 Outlet Park 札幌与白色恋人工厂。</li>
+                        <li>晚间自由探索札幌夜景与美食。</li>
+                        <li>住宿：Grand Mercure Sapporo Odori Park 或同级。</li>
+                    </ul>
                 </li>
                 <li class="timeline__day">
-                    <div class="timeline__heading">Day 7 · 伴手礼与返程</div>
-                    <p>札幌场外市场采购海产 → 机场购物（Royce、白色恋人）→ 归程。</p>
+                    <div class="timeline__heading">第 7 天｜12 月 24 日（三）｜札幌自由活动</div>
+                    <ul>
+                        <li>全天自由活动，可选择自费项目或购物行程。</li>
+                        <li>无专车安排，请自行规划交通。</li>
+                        <li>住宿：Grand Mercure Sapporo Odori Park 或同级。</li>
+                    </ul>
+                </li>
+                <li class="timeline__day">
+                    <div class="timeline__heading">第 8 天｜12 月 25 日（四）｜札幌 → 吉隆坡</div>
+                    <ul>
+                        <li>早餐后专车送往新千岁机场。</li>
+                        <li>10:10 航班起飞，预计 18:00 抵达吉隆坡。</li>
+                        <li>行程圆满结束。</li>
+                    </ul>
+
                 </li>
             </ol>
         </section>
 
-        <section id="insights" class="section">
+
+        <section id="lodging" class="section section--light">
             <div class="section__header">
-                <h2>《天气预报 & 周边热点新闻》</h2>
-                <p>即时关注气温变化与地方活动，让旅程随时调整。</p>
+                <h2>住宿与交通安排</h2>
+                <p>确保 4 间双床/双人房需求，同时关注每日专车与导游服务时长。</p>
+            </div>
+            <div class="lodging-grid">
+                <article class="lodging-card">
+                    <h3>酒店排期</h3>
+                    <ul class="lodging-list">
+                        <li><strong>12/18</strong> · Grand Mercure Sapporo Odori Park（1 晚）</li>
+                        <li><strong>12/19</strong> · Hotel Premium Lake Toya（1 晚）</li>
+                        <li><strong>12/20</strong> · Authent Hotel Otaru（1 晚）</li>
+                        <li><strong>12/21</strong> · New Furano Prince Hotel（1 晚）</li>
+                        <li><strong>12/22 – 12/24</strong> · Grand Mercure Sapporo Odori Park（3 晚）</li>
+                        <li>所有房型含早餐；儿童 6 岁以下不占床。</li>
+                    </ul>
+                </article>
+                <article class="lodging-card">
+                    <h3>交通与导游</h3>
+                    <ul class="lodging-list">
+                        <li>全程 Coaster 车辆，参考使用时间 09:00 – 19:00 或 10:00 – 20:00。</li>
+                        <li>每日 10 小时为限，超时每小时 10,000 日元（现场支付）。</li>
+                        <li>包含 1 名中文导游，超时费用每小时 5,000 日元。</li>
+                        <li>行程不含景点门票及滑雪场费用。</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="pricing" class="section">
+            <div class="section__header">
+                <h2>团费报价</h2>
+                <p>报价以 8 位成人 + 1 位儿童为基础，如有变动请提前确认。</p>
+            </div>
+            <div class="pricing-card">
+                <p><strong>每人团费：</strong>JPY 276,000</p>
+                <p><strong>人数：</strong>8 人</p>
+                <p class="pricing-card__total"><strong>合计：</strong>JPY 2,208,000</p>
+                <p class="pricing-card__note">如入住日期或人数调整，酒店与车辆报价可能变更。</p>
+            </div>
+        </section>
+
+        <section id="insights" class="section section--light">
+            <div class="section__header">
+                <h2>旅途提醒</h2>
+                <p>及时关注天气、新闻与安全提示，让旅行更安心。</p>
             </div>
             <div class="insights-grid">
-                <div class="weather" aria-label="北海道主要城市天气预报">
+                <div class="weather" aria-label="北海道冬季出行建议">
                     <article class="weather__card">
-                        <h3>札幌 · -4°C / 小雪</h3>
-                        <p>体感 -9°C · 建议穿羽绒服、雪地靴，并准备保暖手套。</p>
-                        <p class="weather__meta">风速 6 m/s · 日落 16:12</p>
+                        <h3>冬季气候</h3>
+                        <p>札幌、富良野与洞爷湖平均气温 -3°C 至 -8°C，体感温度更低，务必准备羽绒服、保暖内层与雪地靴。</p>
                     </article>
                     <article class="weather__card">
-                        <h3>小樽 · -3°C / 多云</h3>
-                        <p>港口风较大，拍照时注意相机防寒，傍晚可能飘雪。</p>
-                        <p class="weather__meta">风速 4 m/s · 潮汐高峰 18:05</p>
+                        <h3>滑雪注意</h3>
+                        <p>计划滑雪时请提前预约教练与缆车票，携带雪崩信标及护具，遵守场内安全指示。</p>
                     </article>
                     <article class="weather__card">
-                        <h3>二世谷 · -8°C / 大雪</h3>
-                        <p>滑雪场开放状况良好，请提前在线预约缆车与教练。</p>
-                        <p class="weather__meta">新雪 12 cm · 能见度中等</p>
+                        <h3>交通资讯</h3>
+                        <p>札幌至小樽 JR 冬季偶有班次调整，建议下载 JR 北海道 App 获取即时资讯。</p>
                     </article>
                 </div>
-                <aside class="news" aria-label="周边热点新闻">
-                    <h3>旅途资讯快讯</h3>
+                <aside class="news" aria-label="补充信息">
+                    <h3>快速提示</h3>
                     <ul>
-                        <li><span>札幌雪祭预热：</span> 大通公园 1 月底开始搭建雪雕，请提前规划观赏动线。</li>
-                        <li><span>道央交通提示：</span> 1/15-1/17 札幌至小樽 JR 部分车次调度，建议使用 JR 应用查看实时班次。</li>
-                        <li><span>免税购物优惠：</span> 新千岁机场「雪 Miku」主题商店推出冬季限量周边，持护照可享 8% 折扣。</li>
-                        <li><span>滑雪安全提醒：</span> 二世谷山麓区开放新雪域需佩戴雪崩信标，请听从滑雪巡逻队指示。</li>
+                        <li><span>雪祭动向：</span> 大通公园 12 月底开始搭建雪雕，注意步行动线与安全围挡。</li>
+                        <li><span>购物优惠：</span> 新千岁机场白色恋人、Royce 等免税店提供护照 8% 退税，记得携带收据。</li>
+                        <li><span>夜间保暖：</span> 札幌夜间行程建议准备暖宝宝与口罩，防止冷风刺激。</li>
+                        <li><span>通讯准备：</span> 团队务必保持手机充足电量，使用共享定位方便集合。</li>
+
                     </ul>
                 </aside>
             </div>
@@ -134,8 +235,7 @@
     </main>
 
     <footer class="footer">
-
-        <p>&copy; <span id="year"></span> Hokkaido Trip Planner · 北海道旅行规划助手</p>
+        <p>&copy; <span id="year"></span> Hokkaido VIP Planner · 北海道专属旅行顾问</p>
 
     </footer>
 
