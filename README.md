@@ -1,12 +1,19 @@
 # mertest1
 
-This repository contains simple text files used for testing workflows.
+This repository now hosts the early build of a travel-planning website called **Dream Destinations Travel**.
 
-## Files
+## Project Structure
+- `index.html` – Main landing page with highlights, featured destinations, a sample itinerary, and a consultation request form.
+- `styles.css` – Styling for the travel website, including responsive layout rules.
+- `hello.txt` – Legacy sample file kept for testing workflows.
 
-- `README.md`: Overview of the repository.
-- `hello.txt`: Sample greetings.
+## Getting Started
+1. Clone the repository.
+2. Open `index.html` in your browser to explore the travel website prototype.
+3. Adjust the content or styles to tailor the experience to your travel brand.
 
-## Usage
+## Next Steps
+- Integrate form handling to capture consultation requests.
+- Add additional destination pages and photo galleries.
+- Localize the content for key target markets.
 
-Feel free to modify the files to test git operations and automation.

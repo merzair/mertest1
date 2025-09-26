@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Destinations Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1>Explore the World with Dream Destinations</h1>
+            <p>Personalized itineraries, curated guides, and unforgettable adventures.</p>
+            <a class="cta" href="#highlights">Start Planning</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="highlights" class="section section--light">
+            <h2>Why Travel with Us?</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Tailored Itineraries</h3>
+                    <p>We design bespoke journeys based on your interests, travel style, and pace.</p>
+                </article>
+                <article class="card">
+                    <h3>Local Expertise</h3>
+                    <p>Our on-the-ground partners share insider tips and authentic experiences.</p>
+                </article>
+                <article class="card">
+                    <h3>Seamless Planning</h3>
+                    <p>From flights to boutique stays, we handle the details so you can relax.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="destinations" class="section">
+            <h2>Featured Destinations</h2>
+            <div class="grid grid--three">
+                <article class="destination">
+                    <h3>Santorini, Greece</h3>
+                    <p>Sunset sailing, cliffside villas, and Mediterranean cuisine with a view.</p>
+                </article>
+                <article class="destination">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Temple visits, tea ceremonies, and seasonal experiences in Japan's cultural heart.</p>
+                </article>
+                <article class="destination">
+                    <h3>Patagonia, Chile</h3>
+                    <p>Guided treks, glacier hikes, and eco-friendly lodges amid dramatic landscapes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="itinerary" class="section section--light">
+            <h2>Sample 7-Day Escape</h2>
+            <ol class="itinerary">
+                <li><span>Day 1:</span> Arrival, private transfer, and sunset welcome dinner.</li>
+                <li><span>Day 2:</span> Guided city tour with local tastings.</li>
+                <li><span>Day 3:</span> Choose your adventure: hiking, sailing, or spa retreat.</li>
+                <li><span>Day 4:</span> Immersive cultural workshop with artisan hosts.</li>
+                <li><span>Day 5:</span> Day trip to a hidden gem outside the city.</li>
+                <li><span>Day 6:</span> Leisure day with optional curated experiences.</li>
+                <li><span>Day 7:</span> Farewell brunch and smooth departure arrangements.</li>
+            </ol>
+        </section>
+
+        <section id="planning" class="section">
+            <h2>Plan Your Journey</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+
+                <label for="destination">Dream Destination</label>
+                <input type="text" id="destination" name="destination" placeholder="Where to next?">
+
+                <label for="message">Tell Us About Your Trip</label>
+                <textarea id="message" name="message" rows="5" placeholder="Share your ideas and must-do experiences"></textarea>
+
+                <button type="submit">Request a Consultation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Dream Destinations Travel. Crafted with passion for explorers.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

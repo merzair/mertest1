@@ -1,0 +1,207 @@
+:root {
+    --color-primary: #1f7a8c;
+    --color-secondary: #e0fbfc;
+    --color-accent: #ff9f1c;
+    --color-dark: #0b2d3c;
+    --color-light: #f7f7ff;
+    --font-display: 'Playfair Display', 'Times New Roman', serif;
+    --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--color-light);
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(15, 32, 39, 0.6), rgba(15, 32, 39, 0.6)),
+        url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')
+        center/cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    color: white;
+}
+
+.hero__content {
+    max-width: 720px;
+    z-index: 1;
+}
+
+.hero__content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero__content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    display: inline-block;
+    background: var(--color-accent);
+    color: #14213d;
+    padding: 0.9rem 2.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 159, 28, 0.35);
+}
+
+.cta:hover,
+.cta:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(255, 159, 28, 0.5);
+}
+
+.section {
+    padding: 4rem 1.5rem;
+}
+
+.section--light {
+    background: white;
+}
+
+.section h2 {
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid--three {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card,
+.destination {
+    background: white;
+    padding: 1.75rem;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(15, 32, 39, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.destination:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px rgba(15, 32, 39, 0.12);
+}
+
+.destination h3 {
+    margin-bottom: 0.5rem;
+}
+
+.itinerary {
+    max-width: 720px;
+    margin: 0 auto;
+    list-style: none;
+    counter-reset: itinerary;
+}
+
+.itinerary li {
+    display: flex;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.75rem;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(15, 32, 39, 0.08);
+}
+
+.itinerary li span {
+    font-weight: 700;
+    color: var(--color-primary);
+    min-width: 80px;
+}
+
+.contact-form {
+    max-width: 540px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 18px 36px rgba(15, 32, 39, 0.12);
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    font-family: inherit;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(31, 122, 140, 0.3);
+    border-radius: 12px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(31, 122, 140, 0.15);
+}
+
+.contact-form button {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.9rem 1.75rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(31, 122, 140, 0.3);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #0f2027;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid > * {
+        min-height: 220px;
+    }
+}
