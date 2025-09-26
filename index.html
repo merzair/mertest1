@@ -1,93 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Destinations Travel</title>
+    <title>北海道冬季旅行规划</title>
+    <meta name="description" content="为北海道定制的移动优先旅行规划：待办事项、每日行程、天气预报与周边热点新闻。">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="hero">
-        <div class="hero__overlay"></div>
+
         <div class="hero__content">
-            <h1>Explore the World with Dream Destinations</h1>
-            <p>Personalized itineraries, curated guides, and unforgettable adventures.</p>
-            <a class="cta" href="#highlights">Start Planning</a>
+            <p class="hero__eyebrow">2024 冬季 · 北海道深度游</p>
+            <h1>打造你的北海道雪国之旅</h1>
+            <p class="hero__subtitle">覆盖札幌、小樽、二世谷与富良野，让手机随时掌握待办、行程、天气与资讯。</p>
+            <nav class="quick-nav" aria-label="页面导航">
+                <a href="#todo">出行待办</a>
+                <a href="#schedule">每日行程</a>
+                <a href="#insights">天气与资讯</a>
+            </nav>
+
         </div>
     </header>
 
     <main>
-        <section id="highlights" class="section section--light">
-            <h2>Why Travel with Us?</h2>
-            <div class="grid">
-                <article class="card">
-                    <h3>Tailored Itineraries</h3>
-                    <p>We design bespoke journeys based on your interests, travel style, and pace.</p>
-                </article>
-                <article class="card">
-                    <h3>Local Expertise</h3>
-                    <p>Our on-the-ground partners share insider tips and authentic experiences.</p>
-                </article>
-                <article class="card">
-                    <h3>Seamless Planning</h3>
-                    <p>From flights to boutique stays, we handle the details so you can relax.</p>
-                </article>
+
+        <section id="todo" class="section">
+            <div class="section__header">
+                <h2>《To Do List》出发前的准备</h2>
+                <p>按照清单逐项确认，保障旅程顺利无忧。</p>
             </div>
+            <form class="todo-list" aria-labelledby="todo">
+                <label class="todo-item">
+                    <input type="checkbox"> 
+                    <span>确认护照有效期与日本签证（电子签/多次签）</span>
+                </label>
+                <label class="todo-item">
+                    <input type="checkbox">
+                    <span>购买涵盖雪上运动的旅行保险</span>
+                </label>
+                <label class="todo-item">
+                    <input type="checkbox">
+                    <span>预约 Pocket Wi-Fi 或 eSIM，保障手机导航</span>
+                </label>
+                <label class="todo-item">
+                    <input type="checkbox">
+                    <span>预订 JR Hokkaido Pass 与机场接驳</span>
+                </label>
+                <label class="todo-item">
+                    <input type="checkbox">
+                    <span>准备保暖衣物、暖宝宝、防滑雪地靴</span>
+                </label>
+                <label class="todo-item">
+                    <input type="checkbox">
+                    <span>在手机离线地图中标记景点与餐厅</span>
+                </label>
+            </form>
         </section>
 
-        <section id="destinations" class="section">
-            <h2>Featured Destinations</h2>
-            <div class="grid grid--three">
-                <article class="destination">
-                    <h3>Santorini, Greece</h3>
-                    <p>Sunset sailing, cliffside villas, and Mediterranean cuisine with a view.</p>
-                </article>
-                <article class="destination">
-                    <h3>Kyoto, Japan</h3>
-                    <p>Temple visits, tea ceremonies, and seasonal experiences in Japan's cultural heart.</p>
-                </article>
-                <article class="destination">
-                    <h3>Patagonia, Chile</h3>
-                    <p>Guided treks, glacier hikes, and eco-friendly lodges amid dramatic landscapes.</p>
-                </article>
+        <section id="schedule" class="section section--light">
+            <div class="section__header">
+                <h2>《每日行程》7 天札幌·道央精选</h2>
+                <p>移动端友好的时间轴，随时掌握当日亮点与交通提示。</p>
             </div>
-        </section>
-
-        <section id="itinerary" class="section section--light">
-            <h2>Sample 7-Day Escape</h2>
-            <ol class="itinerary">
-                <li><span>Day 1:</span> Arrival, private transfer, and sunset welcome dinner.</li>
-                <li><span>Day 2:</span> Guided city tour with local tastings.</li>
-                <li><span>Day 3:</span> Choose your adventure: hiking, sailing, or spa retreat.</li>
-                <li><span>Day 4:</span> Immersive cultural workshop with artisan hosts.</li>
-                <li><span>Day 5:</span> Day trip to a hidden gem outside the city.</li>
-                <li><span>Day 6:</span> Leisure day with optional curated experiences.</li>
-                <li><span>Day 7:</span> Farewell brunch and smooth departure arrangements.</li>
+            <ol class="timeline">
+                <li class="timeline__day">
+                    <div class="timeline__heading">Day 1 · 札幌抵达</div>
+                    <p>新千岁机场入境 → JR 快速列车前往札幌 → 夜访薄野拉面横丁。</p>
+                </li>
+                <li class="timeline__day">
+                    <div class="timeline__heading">Day 2 · 札幌城市游</div>
+                    <p>北海道神宫参拜、圆山公园散策 → 大通公园白色灯饰节 → JR 塔展望台夜景。</p>
+                </li>
+                <li class="timeline__day">
+                    <div class="timeline__heading">Day 3 · 小樽运河</div>
+                    <p>搭乘 JR 至小樽 → 运河仓库群与玻璃工坊 → LeTAO 双层芝士蛋糕下午茶。</p>
+                </li>
+                <li class="timeline__day">
+                    <div class="timeline__heading">Day 4 · 二世谷雪场</div>
+                    <p>自驾或巴士前往二世谷 → 全天粉雪滑雪课程 → 温泉旅馆泡汤缓解疲劳。</p>
+                </li>
+                <li class="timeline__day">
+                    <div class="timeline__heading">Day 5 · 登别地狱谷</div>
+                    <p>登别温泉街漫步 → 地狱谷蒸汽景观 → 傍晚品尝温泉料理。</p>
+                </li>
+                <li class="timeline__day">
+                    <div class="timeline__heading">Day 6 · 富良野薰衣草灯饰</div>
+                    <p>雪地摩托体验 → Ningle Terrace 手作市集 → 晚间返回札幌。</p>
+                </li>
+                <li class="timeline__day">
+                    <div class="timeline__heading">Day 7 · 伴手礼与返程</div>
+                    <p>札幌场外市场采购海产 → 机场购物（Royce、白色恋人）→ 归程。</p>
+                </li>
             </ol>
         </section>
 
-        <section id="planning" class="section">
-            <h2>Plan Your Journey</h2>
-            <form class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="you@example.com">
-
-                <label for="destination">Dream Destination</label>
-                <input type="text" id="destination" name="destination" placeholder="Where to next?">
-
-                <label for="message">Tell Us About Your Trip</label>
-                <textarea id="message" name="message" rows="5" placeholder="Share your ideas and must-do experiences"></textarea>
-
-                <button type="submit">Request a Consultation</button>
-            </form>
+        <section id="insights" class="section">
+            <div class="section__header">
+                <h2>《天气预报 & 周边热点新闻》</h2>
+                <p>即时关注气温变化与地方活动，让旅程随时调整。</p>
+            </div>
+            <div class="insights-grid">
+                <div class="weather" aria-label="北海道主要城市天气预报">
+                    <article class="weather__card">
+                        <h3>札幌 · -4°C / 小雪</h3>
+                        <p>体感 -9°C · 建议穿羽绒服、雪地靴，并准备保暖手套。</p>
+                        <p class="weather__meta">风速 6 m/s · 日落 16:12</p>
+                    </article>
+                    <article class="weather__card">
+                        <h3>小樽 · -3°C / 多云</h3>
+                        <p>港口风较大，拍照时注意相机防寒，傍晚可能飘雪。</p>
+                        <p class="weather__meta">风速 4 m/s · 潮汐高峰 18:05</p>
+                    </article>
+                    <article class="weather__card">
+                        <h3>二世谷 · -8°C / 大雪</h3>
+                        <p>滑雪场开放状况良好，请提前在线预约缆车与教练。</p>
+                        <p class="weather__meta">新雪 12 cm · 能见度中等</p>
+                    </article>
+                </div>
+                <aside class="news" aria-label="周边热点新闻">
+                    <h3>旅途资讯快讯</h3>
+                    <ul>
+                        <li><span>札幌雪祭预热：</span> 大通公园 1 月底开始搭建雪雕，请提前规划观赏动线。</li>
+                        <li><span>道央交通提示：</span> 1/15-1/17 札幌至小樽 JR 部分车次调度，建议使用 JR 应用查看实时班次。</li>
+                        <li><span>免税购物优惠：</span> 新千岁机场「雪 Miku」主题商店推出冬季限量周边，持护照可享 8% 折扣。</li>
+                        <li><span>滑雪安全提醒：</span> 二世谷山麓区开放新雪域需佩戴雪崩信标，请听从滑雪巡逻队指示。</li>
+                    </ul>
+                </aside>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; <span id="year"></span> Dream Destinations Travel. Crafted with passion for explorers.</p>
+
+        <p>&copy; <span id="year"></span> Hokkaido Trip Planner · 北海道旅行规划助手</p>
+
     </footer>
 
     <script>

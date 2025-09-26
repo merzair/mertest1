@@ -1,19 +1,19 @@
-# mertest1
 
-This repository now hosts the early build of a travel-planning website called **Dream Destinations Travel**.
+# 北海道旅行规划网站
 
-## Project Structure
-- `index.html` – Main landing page with highlights, featured destinations, a sample itinerary, and a consultation request form.
-- `styles.css` – Styling for the travel website, including responsive layout rules.
-- `hello.txt` – Legacy sample file kept for testing workflows.
+这个仓库提供一个以北海道冬季旅行为主题的移动优先网页原型，方便在旅途中快速查看准备清单、每日行程安排，以及天气与热点资讯。
 
-## Getting Started
-1. Clone the repository.
-2. Open `index.html` in your browser to explore the travel website prototype.
-3. Adjust the content or styles to tailor the experience to your travel brand.
+## 页面结构
+- `index.html` – 主页面，包含待办清单、7 日行程时间轴、天气预报与周边新闻等模块。
+- `styles.css` – 页面样式，采用移动端优先布局与北海道主题视觉（雪国色调与北海道旗帜图案叠加）。
+- `hello.txt` – 旧的演示文件。
 
-## Next Steps
-- Integrate form handling to capture consultation requests.
-- Add additional destination pages and photo galleries.
-- Localize the content for key target markets.
+## 预览方式
+1. 克隆或下载此仓库。
+2. 直接在浏览器打开 `index.html`，即可查看北海道旅行规划页面。
+3. 如需离线浏览，可在项目根目录运行 `python -m http.server 8000` 并访问 `http://localhost:8000`。
 
+## 后续增强建议
+- 通过第三方 API 获取实时天气与新闻数据。
+- 增加可编辑的待办清单与行程备注功能。
+- 提供多语言（中文、日文、英文）切换以适应更多旅客。
