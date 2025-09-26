@@ -1,0 +1,317 @@
+:root {
+    --color-night: #0b1d2c;
+    --color-snow: #f6f8fb;
+    --color-ice: #d5e7f5;
+    --color-accent: #2c96d0;
+    --color-highlight: #ffb347;
+    --radius-large: 20px;
+    --radius-medium: 14px;
+    --shadow-soft: 0 18px 40px rgba(18, 52, 77, 0.18);
+    --shadow-card: 0 12px 28px rgba(18, 52, 77, 0.16);
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--color-snow);
+    color: var(--color-night);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 4rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: clamp(3rem, 6vw, 6rem) clamp(1.25rem, 4vw, 4rem);
+    color: #fff;
+    background-image:
+        linear-gradient(135deg, rgba(11, 29, 44, 0.85), rgba(13, 46, 69, 0.55)),
+        url('https://images.unsplash.com/photo-1517847543399-5a7b0c2ef0da?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: var(--radius-large);
+    border-bottom-right-radius: var(--radius-large);
+    box-shadow: var(--shadow-soft);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Flag_of_Hokkaido_Prefecture.svg');
+    background-size: 240px;
+    background-position: right 12% center;
+    background-repeat: no-repeat;
+    opacity: 0.18;
+    pointer-events: none;
+}
+
+.hero__content {
+    position: relative;
+    max-width: 640px;
+    z-index: 1;
+}
+
+.hero__eyebrow {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 0.75rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.quick-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1.25rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    backdrop-filter: blur(12px);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.quick-nav a:hover,
+.quick-nav a:focus {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+main {
+    display: grid;
+    gap: 2.75rem;
+    padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 4rem);
+}
+
+.section {
+    background: #fff;
+    border-radius: var(--radius-large);
+    padding: clamp(1.75rem, 4vw, 3rem);
+    box-shadow: var(--shadow-card);
+}
+
+.section--light {
+    background: linear-gradient(180deg, #ffffff 0%, rgba(245, 250, 254, 0.95) 100%);
+}
+
+.section__header {
+    margin-bottom: 1.75rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.section__header h2 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: var(--color-night);
+}
+
+.section__header p {
+    color: rgba(11, 29, 44, 0.72);
+    font-size: 0.98rem;
+}
+
+.todo-list {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.todo-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.85rem;
+    align-items: start;
+    padding: 1rem 1.1rem;
+    border-radius: var(--radius-medium);
+    background: var(--color-snow);
+    border: 1px solid rgba(44, 150, 208, 0.25);
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 12px 24px rgba(44, 150, 208, 0.18);
+}
+
+.todo-item input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--color-accent);
+    margin-top: 0.15rem;
+}
+
+.todo-item span {
+    font-size: 0.98rem;
+    font-weight: 500;
+}
+
+.timeline {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.timeline__day {
+    border-radius: var(--radius-medium);
+    padding: 1.1rem 1.2rem;
+    background: rgba(213, 231, 245, 0.35);
+    border-left: 4px solid var(--color-accent);
+    position: relative;
+}
+
+.timeline__day::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 18px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-highlight);
+}
+
+.timeline__heading {
+    font-weight: 600;
+    margin-bottom: 0.45rem;
+}
+
+.insights-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.weather {
+    display: grid;
+    gap: 1rem;
+}
+
+.weather__card {
+    background: linear-gradient(135deg, rgba(44, 150, 208, 0.12), rgba(255, 255, 255, 0.9));
+    border-radius: var(--radius-medium);
+    padding: 1.2rem 1.3rem;
+    border: 1px solid rgba(44, 150, 208, 0.25);
+    backdrop-filter: blur(4px);
+}
+
+.weather__card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather__card p {
+    font-size: 0.95rem;
+    color: rgba(11, 29, 44, 0.78);
+}
+
+.weather__meta {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: rgba(11, 29, 44, 0.6);
+}
+
+.news {
+    background: rgba(11, 29, 44, 0.86);
+    color: #fff;
+    border-radius: var(--radius-medium);
+    padding: 1.25rem 1.4rem;
+    box-shadow: var(--shadow-card);
+}
+
+.news h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
+}
+
+.news ul {
+    display: grid;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.news li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.news li span {
+    color: var(--color-highlight);
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    padding: 2.5rem 1rem 1rem;
+    color: rgba(11, 29, 44, 0.65);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+    body {
+        padding-bottom: 5rem;
+    }
+
+    .section__header {
+        grid-template-columns: auto;
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        gap: 3rem;
+    }
+
+    .insights-grid {
+        grid-template-columns: 3fr 2fr;
+        align-items: start;
+    }
+}
+
+@media (min-width: 960px) {
+    .hero {
+        border-radius: 0 0 var(--radius-large) var(--radius-large);
+    }
+
+    main {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
