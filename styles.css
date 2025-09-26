@@ -9,6 +9,7 @@
     --shadow-soft: 0 18px 40px rgba(18, 52, 77, 0.18);
     --shadow-card: 0 12px 28px rgba(18, 52, 77, 0.16);
     font-size: 16px;
+
 }
 
 * {
@@ -30,10 +31,12 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+
 }
 
 .hero {
     position: relative;
+
     display: flex;
     align-items: center;
     min-height: 70vh;
@@ -201,6 +204,7 @@ main {
     list-style: disc;
 }
 
+
 .timeline__day {
     border-radius: var(--radius-medium);
     padding: 1.1rem 1.2rem;
@@ -224,6 +228,7 @@ main {
     font-weight: 600;
     margin-bottom: 0.45rem;
 }
+
 
 .flight-grid {
     display: grid;
@@ -301,6 +306,7 @@ main {
     color: rgba(11, 29, 44, 0.7);
 }
 
+
 .insights-grid {
     display: grid;
     gap: 1.5rem;
@@ -362,10 +368,12 @@ main {
 .news li span {
     color: var(--color-highlight);
     font-weight: 600;
+
 }
 
 .footer {
     text-align: center;
+
     padding: 2.5rem 1rem 1rem;
     color: rgba(11, 29, 44, 0.65);
     font-size: 0.9rem;
@@ -387,6 +395,7 @@ main {
         gap: 3rem;
     }
 
+
     .flight-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -394,6 +403,7 @@ main {
     .lodging-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
 
     .insights-grid {
         grid-template-columns: 3fr 2fr;
@@ -409,5 +419,6 @@ main {
     main {
         max-width: 1080px;
         margin: 0 auto;
+
     }
 }
